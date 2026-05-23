@@ -1,33 +1,49 @@
-Project: Game Arcade
+=============================
+     GAME ARCADE PROJECT
+=============================
 
-Description:
-This project is a text-based game developed using Object Oriented Programming (OOP) in C++.
-It is part of a group arcade system where each student implements their own game using a shared base class.
+GAME: ESCAPE ROOM
 
-Game Included:
-- Escape Room Game (my implementation)
+DESCRIPTION:
+A console-based Escape Room game developed in C++ using Object-Oriented Programming (OOP).
+The player must explore rooms, collect items, and make correct choices to escape.
 
-OOP Concepts Used:
-- Inheritance (Game base class provided by instructor)
-- Polymorphism (Game* pointer used for play() function)
-- Virtual functions
-- Dynamic memory allocation (new/delete)
-- File handling (leaderboard system)
-- Vectors (inventory system in Escape Room)
+HOW TO PLAY:
+- Run the program using a C++ compiler (Code::Blocks / VS Code).
+- The game starts from main.cpp automatically.
+- Enter numbers shown in the menu to choose actions.
+- Collect items like keys to progress.
+- Reach the final room and choose the correct option to escape.
 
-Features:
-- Interactive escape room puzzle gameplay
-- Inventory system
-- Score tracking system
-- Persistent leaderboard stored in text file
+RULES:
+- Player starts with no items.
+- Some choices give items required to progress.
+- Wrong choices may stop progress or reduce success chances.
+- Game ends when player escapes or fails.
+
+FEATURES:
+- Interactive text-based gameplay
+- Inventory system (items collected)
+- Score system
+- File handling for leaderboard
 - Random choice-based progression
 
-Text Files Used:
-- leaderboard.txt (stores scores)
+REQUIRED FILES:
+Game.h
+EscapeRoomGame.h
+EscapeRoomGame.cpp
+main.cpp
+leaderboard.txt
 
-AI Tools Used:
-- ChatGPT used for debugging, structuring, and fixing integration issues
+BUILD INSTRUCTIONS:
+Compile using:
+g++ main.cpp EscapeRoomGame.cpp -o GameArcade.exe
 
-Notes:
-Only the Escape Room game is included in this repository as per submission requirements.
-The project is part of a shared Game Arcade system where each student contributes one game.
+RUN:
+Execute the compiled file to start the game.
+
+NOTES:
+- Fully console-based game.
+- Input must be numeric based on menu options.
+- Leaderboard updates after each run.
+- Uses polymorphism via Game base class.
